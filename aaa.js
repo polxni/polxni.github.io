@@ -1,4 +1,48 @@
-                                                                                                        //15.05.21
+                                                                                                     //29.05
+
+fetch("https://api.github.com/emojis")
+.then(
+	function(data){
+             return data.json()}
+             )
+.then(
+	function(data){
+		let a = document.querySelector("body")
+		for (let q in data){
+			let x = document.createElement("img")
+			x.setAttribute("src", data[q])
+			a.appendChild(x)
+		}
+	})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                        /*15.05.21
 let g = document.querySelector("input")
 let b = document.querySelector("button")
 let l = document.querySelector("ul")
@@ -19,26 +63,12 @@ b.addEventListener('click', ()=>{
 })
 
 
-g.addEventListener('keypress', (e)=>{
-   g = document.querySelector("input")
-   let t=document.createElement("li")
-   t.innerHTML= g.value
-             t.addEventListener('click', ()=>{
-                        t.classList.toggle("crossed")
- })
-             t.addEventListener('dblclick', ()=>{
-                        l.removeChild(t)
- })
-     g.value= ""
-     g.focus()
-     l.appendChild(t)
-})
 
 
 
 
 
-                                                                                                            /*08.05.21
+                                                                                                        /*08.05.21
 let b = document.querySelector("button")
 let g = document.querySelector("input[type='checkbox']")
 let i = document.querySelector("button")
